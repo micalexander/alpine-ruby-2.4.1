@@ -1,11 +1,11 @@
-  FROM alpine:3.4
+FROM alpine:3.4
 
 ENV RUBY_MAJOR 2.4
 ENV RUBY_VERSION 2.4.1
 ENV RUBY_DOWNLOAD_SHA256 4fc8a9992de3e90191de369270ea4b6c1b171b7941743614cc50822ddc1fe654
 ENV RUBYGEMS_VERSION 2.6.12
 
-ARG PREFIX_DIR
+ARG PREFIX_DIR=/usr/local/ruby
 
 # Replace the default install directory
 # e.g. in vim :%s/\/usr\/local/$PREFIX_DIR/g
